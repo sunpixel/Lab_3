@@ -75,3 +75,16 @@ def aws_function(oprt, a, b):
     x = rand.randrange(1, 10)
     exprs = lambda a, b: a * b
     print(f"{exprs(result, x)}")
+
+
+def multiply(n):
+    '''A function'''
+    return lambda m: n * m
+
+
+def used_times(a):
+    '''Function'''
+    def used(b):
+        '''Sub function'''
+        return a + b
+    return used

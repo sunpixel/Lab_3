@@ -43,7 +43,21 @@ def show_result():
     func1()
     func2(12, 44, sf.do_multiplication)
     cf.aws_function(lambda a, b: a + b, 10, 4)
+    #
+    print(string * 20)
+    fn = cf.multiply(6)
+    print(fn(7))
+    print(fn(8))
 
+    fun = cf.used_times(10)
+    print(fun(2))
+    print(fun(6))
+
+    dumb = lambda a: lambda b: a / b
+
+    new = dumb(123)
+    print(new(4))
+    print(new(12))
 
 
 if __name__ == '__main__':
