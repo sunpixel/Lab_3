@@ -36,7 +36,14 @@ def show_result():
     print(string * 20)
 
     # Block 4
-    
+
+    func1 = lambda: print("This is lambda function")
+    func2 = lambda a, b, operation: print(f'{operation(a, b)}')
+
+    func1()
+    func2(12, 44, sf.do_multiplication)
+    cf.aws_function(lambda a, b: a + b, 10, 4)
+
 
 
 if __name__ == '__main__':

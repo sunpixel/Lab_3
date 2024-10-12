@@ -67,3 +67,11 @@ def local_func_2():
         print("I am inside the local function")
 
     local_inside()
+
+
+def aws_function(oprt, a, b):
+    '''Performs math operations'''
+    result = oprt(a, b)
+    x = rand.randrange(1, 10)
+    exprs = lambda a, b: a * b
+    print(f"{exprs(result, x)}")
